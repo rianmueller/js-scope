@@ -25,17 +25,15 @@ function outerFunction() {
 // It's broken due to count variables colliding into each other.  Fix it!
 function addMatrixElements(matrix) {
 
-  var result = 0;
+  let result = 0;
 
-  for(var i = 0; i < matrix.length; i++) {
-    /* fix counter variables in the second loop */
-    for(var i = 0; i < matrix[i].length; i++) {
-      result = result + matrix[i][i];
+  for(let i = 0; i < matrix.length; i++) {
+    for(let j = 0; j < matrix[i].length; j++) {
+      result = result + matrix[i][j];
     }
   }
   return result;
 }
-
 
 // This function is returning the wrong userObject data. It should be returning
 // Neo's information and not Morpheus'.  Fix it!
