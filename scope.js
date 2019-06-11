@@ -9,19 +9,17 @@ function openLid() {
   isCookieJarOpen = true;
 }
 
-
 // Fill in the return value for the inner function to return a string, 'Hello World' using only the variables provided
 // in both inner and outer functions
 function outerFunction() {
-  var hello = 'Hello';
+  let hello = 'Hello';
 
   function innerFunction() {
-    var world = 'World';
-    return /* answer here */;
+    let world = 'World';
+    return hello + ' ' + world;
   }
   return innerFunction();
 }
-
 
 // This is a function that takes in a 2d-array (or matrix) and returns the sum of all elements
 // It's broken due to count variables colliding into each other.  Fix it!
