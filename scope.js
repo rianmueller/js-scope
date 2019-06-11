@@ -39,16 +39,16 @@ function addMatrixElements(matrix) {
 // Neo's information and not Morpheus'.  Fix it!
 function sendDataToClient() {
 
-  var userObject = {
+  let userObject = {
     handle: 'neo',
     authenticated: false
   }
 
   function authenticateUser(obj, username) {
-    var userObject = {
-      handle: 'morpheus',
-      authenticated: false
-    };
+    // let userObject = {
+    //   handle: 'morpheus',
+    //   authenticated: false
+    // };
 
     if (userObject.handle === username) {
       userObject.authenticated = true;
