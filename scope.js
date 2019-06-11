@@ -1,12 +1,12 @@
 // Fill in the closeLid and openLid functions to set the isCookieJarOpen variable to false or true respectively.
-var isCookieJarOpen = null;
+let isCookieJarOpen = null;
 
 function closeLid() {
-  /* answer here */
+  isCookieJarOpen = false;
 }
 
 function openLid() {
-  /* answer here */
+  isCookieJarOpen = true;
 }
 
 
